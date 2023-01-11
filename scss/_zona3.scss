@@ -1,0 +1,42 @@
+.zona3{
+    display: flex;
+    margin: 50px;
+    .div-izquierda{
+        width: 50%;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .div-derecha{
+        text-align: center;
+        width: 50%;
+        height: 100%;
+        margin-left: 50px;
+        h4{
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+    }
+}
+@media (max-width: 375px){
+    .zona3{
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        .div-izquierda{
+            width: 100%;
+        }
+        .div-derecha{
+            width: 100%;
+            margin: auto;
+        }
+    }
+}

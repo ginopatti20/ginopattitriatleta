@@ -1,0 +1,27 @@
+.zona2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    h2{
+        font-size: 2.7rem;
+    }
+    .linea{
+        height: 2px;
+        width: 70%;
+        background-color: #000;
+    }
+}
+@media (max-width: 375px){
+    .zona2{
+        margin-top: 25px;
+        h2{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+    }
+    
+}

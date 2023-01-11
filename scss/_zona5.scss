@@ -1,0 +1,55 @@
+.zona5{
+    margin: 50px;
+    a{
+        text-decoration: none;
+    }
+    h3{
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(158, 18, 158);
+        font-weight: 700;
+    }
+    .contenedor-feed{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .foto-insta{
+            margin: 5px;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            img:hover{
+                transform: scale(1.1);
+                transition: 1s;
+            }
+        }
+    }
+}
+@media (max-width: 375px){
+    .zona5{
+        margin: 5px;
+        h3{
+            font-size: 1.5rem;
+        }
+        .contenedor-feed{
+            width: 100%;
+            .foto-insta{
+                margin: 5px;
+                width: 100px;
+                height: 100px;
+                background-color: aqua;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}

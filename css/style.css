@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -14,12 +9,17 @@ header {
   padding: 30px 20px;
   z-index: 10;
 }
-
-header.abajo {
-  background: #fff;
-  padding: 15px 20px;
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header .logo {
   position: relative;
   color: #fff;
@@ -29,24 +29,15 @@ header .logo {
   transition: 1.5s;
   text-decoration: none;
 }
-
 header .logo:hover {
   color: #000;
   transition: 0.5s;
   font-size: larger;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header.abajo {
+  background: #fff;
+  padding: 15px 20px;
 }
 
 header ul li {
@@ -75,6 +66,33 @@ header.abajo ul li a {
   color: #000;
 }
 
+@media (max-width: 375px) {
+  header .logo {
+    display: none;
+  }
+}
+footer {
+  height: 250px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+footer .redesSociales-footer i {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+
+@media (max-width: 375px) {
+  footer h3 {
+    font-size: 20px;
+  }
+}
 .zona1 img {
   width: 100%;
 }
@@ -96,6 +114,16 @@ header.abajo ul li a {
   background-color: #000;
 }
 
+@media (max-width: 375px) {
+  .zona2 {
+    margin-top: 25px;
+  }
+  .zona2 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+}
 .zona3 {
   display: flex;
   margin: 50px;
@@ -123,6 +151,22 @@ header.abajo ul li a {
   margin-bottom: 5px;
 }
 
+@media (max-width: 375px) {
+  .zona3 {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+  .zona3 .div-izquierda {
+    width: 100%;
+  }
+  .zona3 .div-derecha {
+    width: 100%;
+    margin: auto;
+  }
+}
 .zona4 {
   display: flex;
   justify-content: space-around;
@@ -139,60 +183,78 @@ header.abajo ul li a {
   transition: 1s;
 }
 
+@media (max-width: 375px) {
+  .zona4 {
+    margin: 25px;
+    display: flex;
+  }
+  .zona4 img {
+    padding: 8px;
+  }
+}
 .zona5 {
   margin: 50px;
 }
-
-.zona6 {
-  margin: 50px;
-}
-.zona6 a {
+.zona5 a {
   text-decoration: none;
 }
-.zona6 h3 {
+.zona5 h3 {
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
   color: rgb(158, 18, 158);
   font-weight: 700;
 }
-.zona6 .contenedor-feed {
+.zona5 .contenedor-feed {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.zona6 .contenedor-feed .foto-insta {
+.zona5 .contenedor-feed .foto-insta {
   margin: 5px;
   width: 200px;
   height: 200px;
   background-color: aqua;
 }
-.zona6 .contenedor-feed .foto-insta img {
+.zona5 .contenedor-feed .foto-insta img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.zona6 .contenedor-feed .foto-insta img:hover {
+.zona5 .contenedor-feed .foto-insta img:hover {
   transform: scale(1.1);
   transition: 1s;
 }
 
-footer {
-  height: 250px;
-  width: 100%;
-  background-color: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 20px;
+@media (max-width: 375px) {
+  .zona5 {
+    margin: 5px;
+  }
+  .zona5 h3 {
+    font-size: 1.5rem;
+  }
+  .zona5 .contenedor-feed {
+    width: 100%;
+  }
+  .zona5 .contenedor-feed .foto-insta {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+  }
+  .zona5 .contenedor-feed .foto-insta img {
+    width: 100px;
+    height: 100px;
+  }
 }
-footer .redesSociales-footer i {
-  width: 30px;
-  height: 30px;
-  color: #fff;
+.zona6 {
+  margin: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

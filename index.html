@@ -19,27 +19,27 @@
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="#">Inicio</a></li>
-                        <li class="nav-item"><a href="#colaboradores">Colaboradores</a></li>
-                        <li class="nav-item"><a href="#redessociales">Redes Sociales</a></li>
-                        <li class="nav-item"><a href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a href="#" style="font-family: 'Raleway', sans-serif;">Inicio</a></li>
+                        <li class="nav-item"><a href="#colaboradores" style="font-family: 'Raleway', sans-serif;">Colaboradores</a></li>
+                        <li class="nav-item"><a href="#redessociales" style="font-family: 'Raleway', sans-serif;">Redes Sociales</a></li>
+                        <li class="nav-item"><a href="#contacto" style="font-family: 'Raleway', sans-serif;">Contacto</a></li>
                     </ul>
                 </div>
                 </div>
 		    </nav>
 	</header>
 	<section class="zona1">
-        <img src="imagenes/DSC_2479.JPG" alt="">
+        <img src="imagenes/MPW_2507.jpg" alt="">
     </section>
     <section class="zona2">
         <div class="linea"></div>
-            <h2>CAMPEON ARGENTINO DE DUATLON SUB-23</h2>
+            <h2>TRIATLETA ARGENTINO ELITE - SUB-23</h2>
             <div class="linea"></div>
         </div>
 	</section>
     <section class="zona3">
         <div class="div-izquierda">
-            <img src="imagenes/IMG_20220927_185143_817.jpg" alt="">
+            <img src="imagenes/330661465_193503129952413_4443923925032661271_n.jpg" alt="">
         </div>
         <div class="div-derecha">
             <h4>SOBRE GINO</h4>
@@ -73,6 +73,9 @@
         </div>
         <div class="box-z4">
             <a href="https://fundacionkelluafen.com/"><img src="imagenes/kelluafen.jpg" alt=""></a>
+        </div>
+        <div class="box-z4">
+            <a href="https://www.dnenergy.com.ar/"><img src="imagenes/DN-logo.jpg" alt=""></a>
         </div>
     </section>
     <div id="redessociales">
@@ -119,22 +122,20 @@
         <br>
     </div>
     <section class="zona6">
-        <h3 style="text-align: center;">¡Contactame!</h3>
-        <form action="" name="formulario" method="get">
+        <form action="https://formsubmit.co/ginopatti.triatlon@gmail.com" method="POST">
+            <h3>¡Contacto!</h3>
             <div class="mb-3">
-                <label for="exampleInputEmail1" aria-placeholder="Nombre" class="form-label">Nombre</label>
-                <input required type="text" class="form-control">
+              <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Nombre" name="name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
+            </div>
+              <div class="mb-3">
+                <textarea name="texto" class="form-control" rows="4"  placeholder="Mensaje"></textarea>
               </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Mensaje</label>
-              <input required type="text" class="form-control">          
-            </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#">
+            <input type="hidden" name="_captcha" value="false">
           </form>
     </section>
     <footer>

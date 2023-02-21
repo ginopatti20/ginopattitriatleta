@@ -8,6 +8,7 @@ header{
     transition: 0.7s;
     padding: 30px 20px;
     z-index: 10;
+    text-transform: uppercase;
     ul{
         position: relative;
         display: flex;
@@ -61,11 +62,4 @@ header ul li a:hover{
 header.abajo .logo,
 header.abajo ul li a{
     color: #000;
-}
-@media (max-width: 450px){
-    header{
-        .logo{
-            display: none;
-        }
-    }
 }

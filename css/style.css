@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap");
 header {
   position: fixed;
   top: 0;
@@ -8,6 +10,7 @@ header {
   transition: 0.7s;
   padding: 30px 20px;
   z-index: 10;
+  text-transform: uppercase;
 }
 header ul {
   position: relative;
@@ -66,11 +69,6 @@ header.abajo ul li a {
   color: #000;
 }
 
-@media (max-width: 450px) {
-  header .logo {
-    display: none;
-  }
-}
 footer {
   height: 250px;
   width: 100%;
@@ -88,13 +86,9 @@ footer .redesSociales-footer i {
   color: #fff;
 }
 
-@media (max-width: 450px) {
-  footer h3 {
-    font-size: 20px;
-  }
-}
 .zona1 img {
   width: 100%;
+  object-fit: cover;
 }
 
 .zona2 {
@@ -114,16 +108,6 @@ footer .redesSociales-footer i {
   background-color: #000;
 }
 
-@media (max-width: 450px) {
-  .zona2 {
-    margin-top: 25px;
-  }
-  .zona2 h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-  }
-}
 .zona3 {
   display: flex;
   margin: 50px;
@@ -151,26 +135,16 @@ footer .redesSociales-footer i {
   margin-bottom: 5px;
 }
 
-@media (max-width: 450px) {
-  .zona3 {
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0;
-  }
-  .zona3 .div-izquierda {
-    width: 100%;
-  }
-  .zona3 .div-derecha {
-    width: 100%;
-    margin: auto;
-  }
-}
 .zona4 {
   display: flex;
   justify-content: space-around;
   margin: 50px;
+}
+.zona4 .box-z4 {
+  box-shadow: 9px 10px 26px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 10px 26px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 10px 26px -6px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
 }
 .zona4 .box-z4 img {
   width: 100%;
@@ -183,15 +157,6 @@ footer .redesSociales-footer i {
   transition: 1s;
 }
 
-@media (max-width: 450px) {
-  .zona4 {
-    margin: 25px;
-    display: flex;
-  }
-  .zona4 img {
-    padding: 8px;
-  }
-}
 .zona5 {
   margin: 50px;
 }
@@ -227,34 +192,24 @@ footer .redesSociales-footer i {
   transition: 1s;
 }
 
-@media (max-width: 450px) {
-  .zona5 {
-    margin: 5px;
-  }
-  .zona5 h3 {
-    font-size: 1.5rem;
-  }
-  .zona5 .contenedor-feed {
-    width: 100%;
-  }
-  .zona5 .contenedor-feed .foto-insta {
-    margin: 5px;
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
-  }
-  .zona5 .contenedor-feed .foto-insta img {
-    width: 100px;
-    height: 100px;
-  }
-}
 .zona6 {
   margin: 50px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zona6 h3 {
+  margin-bottom: 20px;
+}
+.zona6 form .mb-3 .form-control {
+  width: 500px;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

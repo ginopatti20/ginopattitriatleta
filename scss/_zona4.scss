@@ -4,6 +4,10 @@
     margin: 50px;
 
     .box-z4{
+        box-shadow: 9px 10px 26px -6px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 9px 10px 26px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 9px 10px 26px -6px rgba(0,0,0,0.75);
+        border-radius: 50%;
         img{
             width: 100%;
             height: 100%;
@@ -14,14 +18,5 @@
             transform: scale(1.1);
             transition: 1s;
         }        
-    }
-}
-@media (max-width:450px){
-    .zona4{
-        margin: 25px;
-        display: flex;
-        img{
-            padding: 8px;
-        }
     }
 }

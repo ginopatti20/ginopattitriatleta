@@ -100,6 +100,8 @@ footer {
   justify-content: center;
   align-items: center;
   color: #fff;
+}
+footer h3 {
   font-size: 20px;
 }
 footer .redesSociales-footer i {
@@ -108,11 +110,30 @@ footer .redesSociales-footer i {
   color: #fff;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  footer {
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+  footer h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  footer p {
+    font-size: 0.9em;
+  }
+}
 .zona1 img {
   object-fit: cover;
   width: 100%;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .zona1 img {
+    height: 600px;
+  }
+}
 .zona2 {
   display: flex;
   justify-content: center;
@@ -130,6 +151,17 @@ footer .redesSociales-footer i {
   background-color: #000;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .zona2 {
+    margin: 20px 10px;
+  }
+  .zona2 h2 {
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+  }
+}
 .zona3 {
   display: flex;
   margin: 50px;
@@ -157,6 +189,28 @@ footer .redesSociales-footer i {
   margin-bottom: 5px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .zona3 {
+    margin: 20px;
+    flex-direction: column;
+  }
+  .zona3 .div-izquierda {
+    width: 100%;
+    height: 400px;
+  }
+  .zona3 .div-derecha {
+    width: 100%;
+    margin: 20px;
+    margin-left: auto;
+  }
+  .zona3 .div-derecha h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .zona3 .div-derecha p {
+    font-size: 0.9em;
+  }
+}
 .zona4 {
   display: flex;
   justify-content: space-around;
@@ -179,6 +233,17 @@ footer .redesSociales-footer i {
   transition: 1s;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .zona4 {
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+  .zona4 .box-z4 {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+}
 .zona5 {
   margin: 50px;
 }
@@ -214,6 +279,19 @@ footer .redesSociales-footer i {
   transition: 1s;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .zona5 {
+    margin: 20px;
+    margin-top: 50px;
+  }
+  .zona5 h3 {
+    font-size: 1.5em;
+  }
+  .zona5 .contenedor-feed .foto-insta {
+    width: 80px;
+    height: 80px;
+  }
+}
 .zona6 {
   margin: 50px;
   padding: 20px;
@@ -231,12 +309,29 @@ footer .redesSociales-footer i {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .zona6 {
+    margin: 20px;
+    padding: auto;
+  }
+  .zona6 h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .zona6 .form button {
+    font-size: 0.9em;
+  }
   .zona6 .form .mb-3 .form-control {
     width: 200px;
+    font-size: 0.9em;
   }
 }
 * {
   font-family: "Raleway", sans-serif;
+}
+* #colaboradores h3 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

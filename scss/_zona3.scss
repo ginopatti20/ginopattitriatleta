@@ -24,3 +24,26 @@
         }
     }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+    .zona3{
+        margin: 20px;
+        flex-direction: column;
+        .div-izquierda{
+            width: 100%;
+            height: 400px;
+        }
+        .div-derecha{
+            width: 100%;
+            margin: 20px;
+            margin-left: auto;
+
+            h4{
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+            p{
+                font-size: .9em;
+            }
+        }
+    }
+}

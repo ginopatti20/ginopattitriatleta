@@ -32,3 +32,18 @@
         }
     }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+    .zona5{
+        margin: 20px;
+        margin-top: 50px;
+        h3{
+            font-size: 1.5em;
+        }
+        .contenedor-feed{
+            .foto-insta{
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}

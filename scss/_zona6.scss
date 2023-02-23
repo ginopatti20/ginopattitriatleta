@@ -17,3 +17,14 @@
         }
     }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+    .zona6{
+        .form{
+            .mb-3{
+                .form-control{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

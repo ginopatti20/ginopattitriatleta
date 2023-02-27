@@ -33,8 +33,6 @@
         }
         .logo:hover{
             color: #000;
-            transition: .5s;
-            font-size: larger;
         }
     }
     header ul li{
@@ -52,9 +50,7 @@
         transition: 0.7s;
     }
     header ul li a:hover{
-        color: #000;
-        font-size: larger;
-        transition: .5s;
+        color: rgb(0, 0, 0);
     }
     header.abajo{
         background: #fff;
@@ -64,6 +60,10 @@
     header.abajo ul li a{
         color: #000;
     }
+    header.abajo ul li a:hover{
+        color: rgb(66, 169, 229);
+    }
+    
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

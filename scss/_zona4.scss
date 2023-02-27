@@ -23,11 +23,11 @@
 @media (min-width: 320px) and (max-width: 767px) {
     .zona4{
         margin: 20px;
-        flex-wrap: wrap;
+        justify-content: space-around;
         .box-z4{
             width: 80px;
             height: 80px;
-            margin: 10px;
+            margin: 8px;
         }
     }
 }
